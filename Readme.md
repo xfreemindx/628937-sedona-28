@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dmitrii Ivanenko](https://up.htmlacademy.ru/htmlcss/28/user/628937).
-* Наставник: Андрей Чепулис.
+* Наставник: [Андрей Чепулис](https://up.htmlacademy.ru/htmlcss/28/user/240237).
 
 ---
 
