@@ -82,7 +82,32 @@
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <!-- Здесь будет форма записи -->
+      <button type="button">поиск гостиницы в седоне</button>
+      <form action="https://echo.htmlacademy.ru/" method="POST">
+        <p>
+          <label for="arrival-date">дата заезда</label>
+          <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
+          <button type="button"><span>календарь заезда</span></button>
+        </p>
+        <p>
+          <label for="departure-date">Дата выезда</label>
+          <input id="departure-date" type="text" name="departure-date" placeholder="4 июля 2017">
+          <button type="button"><span>календарь выезда</span></button>
+        </p>
+        <p>
+          <label for="adult">Взрослые</label>
+          <button type="button"><span>минус</span></button>
+          <input id="adult" type="text" name="adult-guests" placeholder="2">
+          <button type="button"><span>плюс</span></button>
+        </p>
+        <p>
+          <label for="children">Дети</label>
+          <button type="button"><span>минус</span></button>
+          <input id="children" type="text" name="children-guests" placeholder="0">
+          <button type="button"><span>плюс</span></button>
+        </p>
+        <button type="submit">Найти</button>
+      </form>
       <img src=" img/map.png" width="1199" height="594" alt="sedonamap">
     </section>
   </main>
