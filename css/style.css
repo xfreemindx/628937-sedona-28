@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --secondary: #766357;
+  --secondary-light-dark: #604E43;
+  --secondary-dark: #503E33;
+  --primary: #81B3D2;
+  --primary-light-dark: #669EC0;
+  --primary-dark: #5496BD;
+  --default: #000000;
+  --contrast: #FFFFFF;
+}
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.link a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.link:hover .link:focus {
+  color: var(--primary)
+}
+
+.link:active {
+  color: rgba(0, 20, 0, 0.3)
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+}
+
+.btn--small {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 16px;
+  padding-left: 17px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.btn--big--brown {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 28.5px;
+  padding-bottom: 31.5px;
+  padding-right: 124px;
+  padding-left: 125px;
+}
+
+.btn--big--blue {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-right: 196px;
+  padding-left: 195px;
+
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: var(--contrast);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background: var(--primary-light-dark);
+}
+
+.btn--primary:active {
+  background: var(--primary-dark);
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.btn--secondary {
+  background: var(--secondary);
+  color: var(--contrast);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus {
+  background: var(--secondary-light-dark);
+}
+
+.btn--secondary:active {
+  background: var(--secondary-dark);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.inner-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.page-nav__link {
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.inner-nav__link {
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.main-info h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.main-info p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.feature-list {
+  list-style: none;
+  align-items: center;
+  padding: 0;
+}
+
+.feature-list h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.info-list {
+  list-style: none;
+
+}
+
+.booking h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.search {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.booking label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+fieldset label {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+fieldset p {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.found p{
+  color: #333333;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rating {
+  color: #666666;
+}
+
+::placeholder {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.main-footer__list {
+  list-style: none;
+}
+
+.contacts {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+}
