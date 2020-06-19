@@ -224,13 +224,7 @@ a {
   width: calc(100% / 3);
 }
 
-.future_block__1 {
-  width: 33.333%;
-  background-color: var(--light-blue);
-  color: var(--contrast);
-}
-
-.future_block__2 {
+.future_block {
   width: 33.333%;
   background-color: var(--light-blue);
   color: var(--contrast);
@@ -395,7 +389,7 @@ fieldset p {
   display: flex;
   padding-left: 73px;
   padding-right: 73px;
-  align-items: center; 
+  align-items: center;
 }
 
 .hotel img {
