@@ -43,17 +43,20 @@
               <img src="img/image1.jpg" width="800" height="256">
             </div>
           </li>
-          <li class="feature-list__item">
+          <li>
             <ul class="info-list">
-              <li>
+              <li class="info-list__item">
+                <img src="img/icon-1.svg" width="75" height="72">
                 <h3>Жилье</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li>
+              <li class="info-list__item">
+                <img src="img/icon-3.svg" width="75" height="70">
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li>
+              <li class="info-list__item">
+                <img src="img/icon-2.svg" width="64" height="77">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства</p>
               </li>
@@ -104,19 +107,19 @@
             <button type="button"><span>календарь выезда</span></button>
           </p>
           <div class="people">
-          <p>
-            <label for="adult">Взрослые</label>
-            <button type="button"><span>минус</span></button>
-            <input id="adult" type="text" name="adult-guests" placeholder="2">
-            <button type="button"><span>плюс</span></button>
-          </p>
-          <p>
-            <label for="children">Дети</label>
-            <button type="button"><span>минус</span></button>
-            <input id="children" type="text" name="children-guests" placeholder="0">
-            <button type="button"><span>плюс</span></button>
-          </p>
-        </div>
+            <p>
+              <label for="adult">Взрослые</label>
+              <button type="button"><span>минус</span></button>
+              <input id="adult" type="text" name="adult-guests" placeholder="2">
+              <button type="button"><span>плюс</span></button>
+            </p>
+            <p>
+              <label for="children">Дети</label>
+              <button type="button"><span>минус</span></button>
+              <input id="children" type="text" name="children-guests" placeholder="0">
+              <button type="button"><span>плюс</span></button>
+            </p>
+          </div>
           <button type="submit" class="btn btn--big--blue btn--primary">Найти</button>
         </form>
       </section>
@@ -127,15 +130,18 @@
     <footer class="page-footer">
       <p class="contacts">
         #VISITSEDONA <br>
-        ТЕЛ:+7(495)666-01-66
+        ТЕЛ: +7(495)666-01-66
       </p>
       <ul class="social-list">
-        <li class="social-list__item"><a href="#">Twitter</a></li>
-        <li class="social-list__item"><a href="#">Facebook</a></li>
-        <li class="social-list__item"><a href="#">Youtube</a></li>
+        <li class="social-list__item"><a class="footer-link" href="#"><img src="img/twitter.svg" width="17"
+              height="17"></a></li>
+        <li class="social-list__item"><a class="footer-link" href="#"><img src="img/fb-icon.svg" width="12"
+              height="22"></a></li>
+        <li class="social-list__item"><a class="footer-link" href="#"><img src="img/youtube.svg" width="20"
+              height="16"></a></li>
       </ul>
-      <p class="footer-copyright">Website by
-        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41"></a>
+      <p class="footer-copyright">Website by<a class="button" href="https://htmlacademy.ru"><img
+            src="img/logo-htmlacademy.svg" width="115" height="41"></a>
       </p>
     </footer>
   </div>
