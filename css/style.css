@@ -31,9 +31,18 @@
   --rating-color: #666666;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .page-body {
-  align-content: start;
   margin: 0;
   font-family: "PTSans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -41,6 +50,8 @@
 }
 
 .container {
+  position: relative;
+  align-content: start;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -52,7 +63,7 @@
 
 img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .logo {
@@ -184,7 +195,7 @@ a {
 }
 
 .current {
-  text-align: right;
+  color: var(--dark-orange);
 }
 
 
@@ -224,7 +235,7 @@ a {
   box-sizing: border-box;
   width: calc(100% / 3);
   flex-direction: column;
-  
+
 }
 
 .future_block {
@@ -443,7 +454,13 @@ fieldset p {
   justify-items: center;
   align-items: center;
   background-color: var(--contrast);
-  opacity: o.9;
+}
+
+.page-footer--index {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
   width: 100%;
 }
 
@@ -476,13 +493,6 @@ fieldset p {
   width: 150px;
 }
 
-.social-list img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
 
 .social-list__item {
   content: "";
@@ -490,6 +500,14 @@ fieldset p {
   width: calc(1/3*100% - (1 - 1/3)*6px);
   background-color: var(--light-blue);
   height: 48px;
+}
+
+.social-list svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer-copyright {
